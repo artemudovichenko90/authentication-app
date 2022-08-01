@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.inputsWrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 18px;
+
+  @media screen and (min-width: 708px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.radioButton {
+  margin-top: 30px;
+}
+
+.submit {
+  margin-top: 30px;
+  text-transform: none;
+}
