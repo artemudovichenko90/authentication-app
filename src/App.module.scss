@@ -1,0 +1,12 @@
+body {
+  background-color: #3ea9f5;
+  font-family: Gotham SSm A, Gotham SSm B, Halvetica, sans-serif;
+}
+
+.container {
+  padding: 50px 50px 0;
+
+  @media screen and (min-width: 1148px) {
+    padding: 50px 150px 0;
+  }
+}

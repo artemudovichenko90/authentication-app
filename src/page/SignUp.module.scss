@@ -1,0 +1,19 @@
+.signUp {
+  max-width: 570px;
+  margin: auto;
+
+  &__title {
+    font-size: 38px;
+    margin-bottom: 21px;
+  }
+
+  &__subTitle {
+    margin-bottom: 31px;
+    padding: 0 80px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
