@@ -1,0 +1,56 @@
+.label {
+  position: relative;
+}
+
+.span {
+  text-transform: capitalize;
+}
+
+.input {
+  width: 100%;
+  padding: 21px 23px;
+  border: 2px solid white;
+  font-size: 16px;
+  color: #9CA8B7;
+  border-radius: 4px;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.error {
+  position: absolute;
+  width: 150px;
+  left: -165px;
+  top: 0;
+  padding: 10px;
+  background: #C03737;
+  border: 1px solid #830303;
+  border-radius: 5px;
+}
+
+.error:after,
+.error:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 50%;
+}
+
+.error:before {
+  right: -8px;
+  margin-top: -8px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #830303;
+}
+
+.error:after {
+  right: -7px;
+  margin-top: -7px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #C03737;
+}
