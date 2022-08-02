@@ -1,6 +1,7 @@
 import * as Yup from 'yup';
 import CONTSTANTS from './../constants';
 const { INPUT_NAMES: { FIRST_NAME, LAST_NAME, DISPLAY_NAME, EMAIL, PASSWORD, PASSWORD_CONFIRM, JOIN_AS } } = CONTSTANTS;
+
 export const SCHEMA_NAME = Yup.string().matches(/^[A-Z][a-z]{1,20}$/, 'Incorrect name').required('Required field');
 
 export const SCHEMA_EMAIL = Yup.string().email('Incorrect email').required('Required field');

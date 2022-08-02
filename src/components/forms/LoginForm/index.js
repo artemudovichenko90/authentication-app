@@ -6,7 +6,7 @@ import Submit from './../Submit';
 import styles from './LoginForm.module.scss';
 
 const initialValues = { email: '', password: '' };
-const LoginForm = (props) => {
+const LoginForm = () => {
   const onSubmit = (values, formikBag) => {
     formikBag.resetForm();
   }
