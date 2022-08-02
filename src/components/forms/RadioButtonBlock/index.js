@@ -8,14 +8,16 @@ const RadioButtonBlock = (props) => {
   const allStyles = cx(styles.wrapper, className);
   return (
     <div className={allStyles}>
-      <Field name={name}>
-        {({ field }) => {
-          return <input type='radio'{...field}{...rest} value={value} checked={field.value === value} />
-        }}
-      </Field>
       <label className={styles.label}>
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.subtitle}>{description}</p>
+        <Field name={name}>
+          {({ field }) => {
+            return <input type='radio'{...field}{...rest} value={value} checked={field.value === value} />
+          }}
+        </Field>
+        <div className={styles.titleWrap}>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.subtitle}>{description}</p>
+        </div>
       </label>
     </div>
   );
