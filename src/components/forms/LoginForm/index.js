@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Formik } from 'formik';
 import { SCHEMA_LOGIN } from '../../../utils/schemaValidation';
 import Input from '../Input';
-import Submit from '../../Submit/index';
+import Submit from '../Submit/index';
 import styles from './LoginForm.module.scss';
 
 const initialValues = { email: '', password: '' };

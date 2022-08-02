@@ -3,7 +3,7 @@ import { Form, Formik } from 'formik';
 import { SCHEMA_SIGN_UP } from '../../../utils/schemaValidation';
 import Input from '../Input';
 import RadioButtonBlock from '../RadioButtonBlock/index';
-import Submit from '../../Submit';
+import Submit from '../Submit';
 import styles from './SignUpForm.module.scss';
 import CONTSTANTS from './../../../constants';
 const { BUYER, SELLER } = CONTSTANTS.RADIO_BUTTON;
