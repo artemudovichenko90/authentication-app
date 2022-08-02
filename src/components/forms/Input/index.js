@@ -9,7 +9,7 @@ const Input = (props) => {
     <label className={styles.label}>
       <Field name={name}>
         {({ field, form, meta }) => {
-          const inputStyles = cx(styles.input, className, { [styles.invalid]: meta.error });
+          const inputStyles = cx(styles.input, className, { [styles.invalid]: meta.error && meta.touched});
           return <input {...field}{...rest} className={inputStyles} />
         }}
       </Field>

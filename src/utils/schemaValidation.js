@@ -13,6 +13,7 @@ export const SCHEMA_SIGN_UP = Yup.object({
   email: SCHEMA_EMAIL,
   password: SCHEMA_PASSWORD,
   passwordConfirm: Yup.string().oneOf([Yup.ref('password')],'Password not equel'),
+  join: Yup.string().required()
 })
 
 export const SCHEMA_LOGIN = Yup.object({
