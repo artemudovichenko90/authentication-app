@@ -38,8 +38,8 @@ const SignUpForm = () => {
                 <Input className={styles.form__input} name={LAST_NAME} placeholder="Last Name" />
                 <Input className={styles.form__input} name={DISPLAY_NAME} placeholder="Display Name" />
                 <Input className={styles.form__input} name={EMAIL} placeholder="Email Address" />
-                <Input className={styles.form__input} name={PASSWORD} placeholder="Password" />
-                <Input className={styles.form__input} name={PASSWORD_CONFIRM} placeholder="Password Confirm" />
+                <Input className={styles.form__input} type="password" name={PASSWORD} placeholder="Password" />
+                <Input className={styles.form__input} type="password" name={PASSWORD_CONFIRM} placeholder="Password Confirm" />
               </div>
               <RadioButtonBlock
                 name={JOIN_AS}
