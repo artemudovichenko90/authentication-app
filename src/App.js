@@ -6,7 +6,7 @@ import Login from './page/Login';
 import SignUp from './page/SignUp';
 import styles from './App.module.scss';
 import CONTSTANTS from './constants';
-const { HOME, LOGIN, SIGN_UP } = CONTSTANTS.URL;
+const { URL: { HOME, LOGIN, SIGN_UP } } = CONTSTANTS;
 
 const App = () => {
   return (

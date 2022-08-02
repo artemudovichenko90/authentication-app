@@ -1,6 +1,6 @@
 import React from 'react';
-import SignUpForm from './../components/forms/SignUpForm';
-import Title from './../components/Title';
+import SignUpForm from './../../components/forms/SignUpForm';
+import Title from './../../components/Title';
 import styles from './SignUp.module.scss';
 
 

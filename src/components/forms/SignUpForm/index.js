@@ -1,13 +1,21 @@
 import React from 'react';
 import { Form, Formik } from 'formik';
-import { SCHEMA_SIGN_UP } from '../../../utils/schemaValidation';
+import { SCHEMA_SIGN_UP } from './../../../utils/schemaValidation';
 import Input from '../Input';
 import RadioButtonBlock from '../RadioButtonBlock/index';
 import Submit from './../Submit';
 import styles from './SignUpForm.module.scss';
 import CONTSTANTS from './../../../constants';
 const { RADIO_BUTTON: { BUYER, SELLER } } = CONTSTANTS;
-const initialValues = { firstName: '', lastName: '', displayName: '', email: '', password: '', passwordConfirm: '', join: BUYER };
+const initialValues = {
+  firstName: '',
+  lastName: '',
+  displayName: '',
+  email: '',
+  password: '',
+  passwordConfirm: '',
+  join: BUYER
+};
 
 const SignUpForm = () => {
   const onSubmit = (values, formikBag) => {
