@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import ChoiceAuthBtn from '../ChoiceAuthBtn';
+import ChoiceAuthBtn from './../ChoiceAuthBtn';
 import styles from './Header.module.scss';
 import CONTSTANTS from './../../constants';
 const { HOME, LOGIN, SIGN_UP } = CONTSTANTS.URL;
