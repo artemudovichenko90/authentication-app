@@ -20,7 +20,7 @@ const LoginForm = (props) => {
           return (
             <Form className={styles.form}>
               <Input className={styles.form__input} name="email" placeholder="Enter email" />
-              <Input className={styles.form__input} name="password" placeholder="Enter password" />
+              <Input className={styles.form__input} type='password' name="password" placeholder="Enter password" />
               <Submit name='login' />
             </Form>
           );
